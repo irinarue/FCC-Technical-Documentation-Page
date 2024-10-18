@@ -1,0 +1,178 @@
+*, *::before, *::after {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: lightblue;
+    margin: 1rem;
+    font-family: Verdana light;
+    color: rgb(33, 40, 75);
+    font-size: 82.5%;
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+    #nav-bar {
+        font-size: 66%;
+    }
+
+    #title {
+        font-size: 66%;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 66%;
+    }
+
+    #navbar {
+        grid-template-rows: 1fr 5fr;
+        gap: 1rem;
+        background-color: lightblue;
+        width: 12rem !important;
+        height: 100%;
+    }
+
+    a {
+        min-height: 3rem;
+    }
+
+    #content {
+        grid-area: 2/span 2;
+        flex-direction: column !important;
+        overflow-y: scroll;
+    }
+
+    hr {
+        width: 12rem !important;
+        border-top: 1px solid rgb(33, 40, 75) !important;
+        height: 0 !important;
+    }
+
+    main {
+       margin-left: 14rem !important ;
+    }
+    
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 1rem;
+    background-color: lightblue;
+}
+
+#title {
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+a {
+    display: block;
+    align-content: center;
+    color:rgb(33, 40, 75);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+hr{
+    height: 6rem;
+    border: none;
+    border-left: 1px solid rgb(33, 40, 75);
+
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:rgb(33, 40, 75);     
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(33, 40, 75, 0.2);
+}
+
+main {
+    margin: 7rem 1rem;
+}
+
+.subtitle {
+    margin: 5rem 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    border-top: 3px double rgb(33, 40, 75);
+    padding-top: 1rem;
+}
+
+#Facts_and_Figures {
+    text-align: center;
+}
+
+code {
+    border: 1px solid rgb(33, 40, 75);
+    padding: 0.25rem;
+    
+}
+
+.additionalInfo{
+    font-size: 0.75rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 1.5rem;
+}
+
+span {
+    font-weight: bold;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: -1rem;
+    border-top: 1px dotted rgb(33, 40, 75);
+    padding-top: 0.5rem;
+}
+
+.cuisine {
+    border-top: none;
+    margin-bottom: 0;
+    height: 2rem;
+    float: right;
+}
+
+h5 {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+img {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+
